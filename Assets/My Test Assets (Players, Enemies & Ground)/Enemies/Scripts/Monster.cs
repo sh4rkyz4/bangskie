@@ -49,8 +49,9 @@ public abstract class Monster : MonoBehaviour
         healthPoints -= 35f;
     }
 
-    public virtual void ManageBehaviour()
+    public virtual void ManageBehaviour()// ABSTRACTION
     {
+        // Behavior logic
         distanceToPlayer = Vector3.Distance(playerRB.transform.position, transform.position);
 
         if (distanceToPlayer < detectionRange)

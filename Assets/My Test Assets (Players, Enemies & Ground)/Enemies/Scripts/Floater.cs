@@ -33,6 +33,7 @@ public class Floater : Monster // INHERITANCE
 
 public override void MoveTowardsPlayer() // POLYMORPHISM
     {
+        // Custom movement behavior
         var playerPos = playerRB.transform.position;
         playerPos.y = offset.y;
         transform.position = Vector3.MoveTowards(
